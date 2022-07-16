@@ -4,19 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jogo Gato</title>
+    <title>Jogo do Gato</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
+    <div class="controles">
+      <h2>Controles</h2>
+      <button id="iniciar" onclick="iniciarJogo()">Iniciar</button>
+      <button id="pausar" onclick="pausarJogo()">Pausar</button>
+      <button id="parar" onclick="pararJogo()">Parar</button>
+    </div>
+
+    <div class="parcias">
+      <h2>Parciais</h2>
+      <table>
+        <thead>
+          <th>Tempo</th>
+          <th>Tiros</th>
+          <th>Acertos</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="cronometro">00:00</td>
+            <td id="tiros">0</tdi>
+            <td id="acertos">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
     <main>
-      <div onclick="contarTiros()" id="cenario">
+      <div id="cenario">
         <div id="alvo"></div>
       </div>
     </main>
 
-    <div id="contador">
-      <p id="tiros"></p>
+    <div class="historico">
+      <h2>Historico</h2>
+      <table>
+        <thead>
+          <th>Nome</th>
+          <th>Tempo</th>
+          <th>Tiros</th>
+          <th>Acertos</th>
+        </thead>
+        <tbody id="historicoValores">
+        </tbody>
     </div>
   </body>
 </html>

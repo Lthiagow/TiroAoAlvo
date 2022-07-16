@@ -3,14 +3,72 @@
   width: 800px;
   margin: auto;
   position: relative;
-  background-color: aqua;
+  border-radius: 15px;
+  cursor: crosshair;
+  background: url(assets/imgs/predio.png);
+  background-size: cover;
 }
 
 #alvo {
-  top: 0;
-  left: 0;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  background-color: red;
+  top: 0px;
+  left: 0px;
+  height: 70px;
+  width: 50px;
+  background: url(assets/imgs/gato.png);
+  background-size: cover;
+  position: absolute;
+}
+
+.controles {
+  float: left;
+  height: 100px;
+  width: 200px;
+}
+.controles h2 {
+  text-align: center;
+}
+
+.controles button {
+  width: 120px;
+  margin: 20px 40px 0 40px;
+}
+
+.parcias {
+  float: right;
+  height: 300px;
+  width: 285px;
+  text-align: center;
+}
+
+table {
+  border: solid 1px #ddeeee;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font: normal 13px Arial, sans-serif;
+  margin: auto;
+}
+table thead th {
+  background-color: #ddefef;
+  border: solid 1px #ddeeee;
+  color: #336b6b;
+  padding: 10px;
+  text-align: center;
+  text-shadow: 1px 1px 1px #fff;
+}
+table tbody td {
+  border: solid 1px #ddeeee;
+  color: #333;
+  padding: 10px;
+  text-align: center;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+.historico {
+  width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.historico table {
+  width: 100%;
 }
