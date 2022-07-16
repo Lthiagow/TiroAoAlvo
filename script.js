@@ -1,3 +1,5 @@
+// CÓDIGO 100% FEITO POR EXPEDITO HEBERT
+
 // Variavéis
 let tirosElement = document.querySelector("#tiros");
 let acertosElement = document.querySelector("#acertos");
