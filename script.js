@@ -1,5 +1,3 @@
-// CÓDIGO 100% FEITO POR EXPEDITO HEBERT
-
 // Variavéis
 let tirosElement = document.querySelector("#tiros");
 let acertosElement = document.querySelector("#acertos");
@@ -12,7 +10,7 @@ let tiros = 0;
 let acertos = 0;
 let mover;
 let numTentativa = 0;
-//left 730 top 530
+
 
 function contarTiros() {
   tiros++;
